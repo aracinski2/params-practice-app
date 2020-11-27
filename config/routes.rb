@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   
   namespace :api do
     get "/params" => "params#index"
+    get "/params/:phrase" => "params#index"
+    post "/params" => "params#show"
   end
 end

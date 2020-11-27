@@ -3,4 +3,9 @@ class Api::ParamsController < ApplicationController
     @params = params[:phrase].upcase
     render 'index.json.jb'
   end
+
+  def show
+    @param = params[:phrase]
+    render 'show.json.jb'
+  end
 end
